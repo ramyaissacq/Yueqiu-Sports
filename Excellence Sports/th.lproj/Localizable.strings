@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  Excellence Sports
+
+  Created by Remya on 12/27/22.
+  
+*/
+
+"Excellence Sports" = "Excellence Sports";
+"Premier League" = "พรีเมียร์ลีก";
+"La Liga" = "ลาลีกา";
+"Serie A" = "กัลโช่เซเรียอา";
+"Bundesliga" = "บุนเดสลีกา";
+"Ligue 1" = "ลีกเอิง 1";
+"Chinese Super League" = "ไชนีส ซูเปอร์ลีก";
+"AFC Champions League" = "เอเอฟซีแชมเปียนส์ลีก";
+"Asian Qualifiers" = "รอบคัดเลือกเอเชีย";
+"South American Qualifier" = "รอบคัดเลือกอเมริกาใต้";
+"European Qualifier" = "รอบคัดเลือกยุโรป";
+"World Cup" = "ฟุตบอลโลก";
+"European Cup" = "ถ้วยยุโรป";
+"Confederations Cup" = "คอนเฟเดอเรชันส์ คัพ";
+"America's Cup" = "อเมริกาส์คัพ";
+"Player Info" = "ข้อมูลผู้เล่น";
+"Full Name" = "ชื่อเต็ม";
+"Country" = "ประเทศ";
+"Birthday" = "วันเกิด";
+"Height" = "ส่วนสูง";
+"Weight" = "น้ำหนัก";
+"Position" = "ตำแหน่ง";
+"Number" = "ตัวเลข";
+"Contract Ending" = "การสิ้นสุดสัญญา";
+"Language" = "ภาษา";
+"Privacy Policy" = "นโยบายความเป็นส่วนตัว";
+"Share App" = "แชร์แอพ";
+"Feedback" = "ข้อเสนอแนะ";
+"Rate Us" = "ให้คะแนนเรา";
+"Million" = "ล้าน";

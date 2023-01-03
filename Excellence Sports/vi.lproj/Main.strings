@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = " "; ObjectID = "14t-pp-ToW"; */
+"14t-pp-ToW.text" = " ";
+
+/* Class = "UISearchBar"; placeholder = "Search Here"; ObjectID = "7At-Og-csJ"; */
+"7At-Og-csJ.placeholder" = "Tìm kiếm ở đây";
+
+/* Class = "UILabel"; text = "Leagues"; ObjectID = "7xl-uW-vE2"; */
+"7xl-uW-vE2.text" = "Leagues";
+
+/* Class = "UILabel"; text = " "; ObjectID = "Pi0-xE-KGW"; */
+"Pi0-xE-KGW.text" = " ";
+
+/* Class = "UISearchBar"; placeholder = "Search Here"; ObjectID = "bHy-es-KBl"; */
+"bHy-es-KBl.placeholder" = "Tìm kiếm ở đây";
+
+/* Class = "UILabel"; text = " "; ObjectID = "o9A-CV-r23"; */
+"o9A-CV-r23.text" = " ";
+
+/* Class = "UILabel"; text = "Most valued players in the league"; ObjectID = "ytH-Iv-g4d"; */
+"ytH-Iv-g4d.text" = "Những cầu thủ được đánh giá cao nhất trong giải đấu";
