@@ -106,6 +106,7 @@ extension UIViewController
     func getButton(image:UIImage)->UIButton{
         let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         btn.setImage(image, for: .normal)
+        btn.addTarget(self, action: #selector(actionBack), for: .touchUpInside)
         return btn
     }
     

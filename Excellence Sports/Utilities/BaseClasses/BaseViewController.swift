@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance.largeTitleTextAttributes = [NSAttributedString.Key.paragraphStyle : style]
     }
     
-    func setNavBarColor(color:UIColor = Colors.gradient1Color())
+    func setNavBarColor(color:UIColor = .white)
     {
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.removeBottomLine()
@@ -29,7 +29,6 @@ class BaseViewController: UIViewController {
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.backgroundColor = color
-        
         navBarAppearance.shadowColor = .clear
         self.navigationController?.navigationBar.backgroundColor = color
         self.navigationController?.navigationBar.tintColor = color
@@ -53,22 +52,22 @@ class BaseViewController: UIViewController {
         self.navigationItem.titleView = getHeaderLabel(title: title)
     }
     
-    func getHeaderLabel(title:String) -> UILabel{
-        let w = title.width(forHeight: 26, font: UIFont(name: "Rubik-Bold", size: 26)!)
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: w, height: 26))
+    func getHeaderLabel(title:String,color:UIColor=Colors.accentColor()) -> UILabel{
+        let w = title.width(forHeight: 20, font: UIFont(name: "NotoSans-Bold", size: 20)!)
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: w, height: 20))
         label.text = title
-        label.font = UIFont(name: "Rubik-Bold", size: 26)
-        label.textColor = Colors.accentColor()
+        label.font = UIFont(name: "NotoSans-Bold", size: 20)
+        label.textColor = color
         return label
     }
     
    
    
     func getGradientHeaderLabel(title:String) -> UILabel{
-        let w = title.width(forHeight: 26, font: UIFont(name: "Rubik-Bold", size: 26)!)
+        let w = title.width(forHeight: 26, font: UIFont(name: "NotoSans-Bold", size: 26)!)
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: w, height: 26))
         label.text = title
-        label.font = UIFont(name: "Rubik-Bold", size: 26)
+        label.font = UIFont(name: "NotoSans-Bold", size: 26)
         let gradient = label.getGradientLayer(bounds: label.bounds)
         label.textColor = label.gradientColor(bounds: label.bounds, gradientLayer: gradient)
         return label

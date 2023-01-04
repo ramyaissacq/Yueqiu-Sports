@@ -10,6 +10,10 @@
 		47C3167E23A0FEC353104B9E /* Pods_Excellence_Sports_Excellence_SportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E488B28BC933AED4DE5EC319 /* Pods_Excellence_Sports_Excellence_SportsUITests.framework */; };
 		562B2DC9EF62E97F806E4B67 /* Pods_Excellence_Sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C73F6A06E809962805C9C1C /* Pods_Excellence_Sports.framework */; };
 		A559087AD1F42F9CA393DC16 /* Pods_Excellence_SportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A720F0880849449CC7AC1D /* Pods_Excellence_SportsTests.framework */; };
+		AD16A3DF2965941D000BBB93 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD16A3DB2965941C000BBB93 /* NotoSans-Medium.ttf */; };
+		AD16A3E02965941D000BBB93 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD16A3DC2965941D000BBB93 /* NotoSans-Bold.ttf */; };
+		AD16A3E12965941D000BBB93 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD16A3DD2965941D000BBB93 /* NotoSans-SemiBold.ttf */; };
+		AD16A3E22965941D000BBB93 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD16A3DE2965941D000BBB93 /* NotoSans-Regular.ttf */; };
 		AD2367D2295F1428008CD760 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD2367D4295F1428008CD760 /* InfoPlist.strings */; };
 		AD2CAF592959B2A700010B25 /* LeagueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2CAF582959B2A700010B25 /* LeagueDetailsViewController.swift */; };
 		AD2CAF5B2959B2D800010B25 /* LeagueDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2CAF5A2959B2D800010B25 /* LeagueDetailsViewModel.swift */; };
@@ -120,10 +124,6 @@
 		AD7F6C0029572C9F006C7475 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F6BFE29572C9F006C7475 /* LeagueTableViewCell.swift */; };
 		AD7F6C0129572C9F006C7475 /* LeagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7F6BFF29572C9F006C7475 /* LeagueTableViewCell.xib */; };
 		AD7F6C03295731CF006C7475 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7F6C02295731CF006C7475 /* Colors.xcassets */; };
-		AD7F6C0929573832006C7475 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7F6C0529573832006C7475 /* Rubik-Medium.ttf */; };
-		AD7F6C0A29573832006C7475 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7F6C0629573832006C7475 /* Rubik-Bold.ttf */; };
-		AD7F6C0B29573832006C7475 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7F6C0729573832006C7475 /* Rubik-SemiBold.ttf */; };
-		AD7F6C0C29573832006C7475 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7F6C0829573832006C7475 /* Rubik-Regular.ttf */; };
 		AD9A43F6295B21F30050E15C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9A43F8295B21F30050E15C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +151,10 @@
 		893829AD10E3E0174AEBB848 /* Pods-Excellence SportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excellence SportsTests.release.xcconfig"; path = "Target Support Files/Pods-Excellence SportsTests/Pods-Excellence SportsTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2E35AD2524B3F99C6470421 /* Pods-Excellence Sports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excellence Sports.debug.xcconfig"; path = "Target Support Files/Pods-Excellence Sports/Pods-Excellence Sports.debug.xcconfig"; sourceTree = "<group>"; };
 		A3131679ECAC729ECDC8ADF3 /* Pods-Excellence Sports-Excellence SportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excellence Sports-Excellence SportsUITests.release.xcconfig"; path = "Target Support Files/Pods-Excellence Sports-Excellence SportsUITests/Pods-Excellence Sports-Excellence SportsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD16A3DB2965941C000BBB93 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		AD16A3DC2965941D000BBB93 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		AD16A3DD2965941D000BBB93 /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD16A3DE2965941D000BBB93 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		AD2367D3295F1428008CD760 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD2367D5295F142B008CD760 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AD2CAF582959B2A700010B25 /* LeagueDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsViewController.swift; sourceTree = "<group>"; };
@@ -271,10 +275,6 @@
 		AD7F6BFE29572C9F006C7475 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
 		AD7F6BFF29572C9F006C7475 /* LeagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeagueTableViewCell.xib; sourceTree = "<group>"; };
 		AD7F6C02295731CF006C7475 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		AD7F6C0529573832006C7475 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
-		AD7F6C0629573832006C7475 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		AD7F6C0729573832006C7475 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
-		AD7F6C0829573832006C7475 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		AD9A43ED295B1AC80050E15C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AD9A43EF295B1B600050E15C /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
 		AD9A43F1295B1B900050E15C /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
@@ -747,10 +747,10 @@
 		AD7F6C0429573811006C7475 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AD7F6C0629573832006C7475 /* Rubik-Bold.ttf */,
-				AD7F6C0529573832006C7475 /* Rubik-Medium.ttf */,
-				AD7F6C0829573832006C7475 /* Rubik-Regular.ttf */,
-				AD7F6C0729573832006C7475 /* Rubik-SemiBold.ttf */,
+				AD16A3DC2965941D000BBB93 /* NotoSans-Bold.ttf */,
+				AD16A3DB2965941C000BBB93 /* NotoSans-Medium.ttf */,
+				AD16A3DE2965941D000BBB93 /* NotoSans-Regular.ttf */,
+				AD16A3DD2965941D000BBB93 /* NotoSans-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -869,12 +869,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD16A3E22965941D000BBB93 /* NotoSans-Regular.ttf in Resources */,
 				AD9A43F6295B21F30050E15C /* Localizable.strings in Resources */,
-				AD7F6C0A29573832006C7475 /* Rubik-Bold.ttf in Resources */,
 				AD7F6BF829572C8F006C7475 /* LanguageTableViewCell.xib in Resources */,
+				AD16A3E12965941D000BBB93 /* NotoSans-SemiBold.ttf in Resources */,
+				AD16A3DF2965941D000BBB93 /* NotoSans-Medium.ttf in Resources */,
 				AD7F6BFC29572C8F006C7475 /* ProfileHeaderTableViewCell.xib in Resources */,
 				AD7F6C03295731CF006C7475 /* Colors.xcassets in Resources */,
-				AD7F6C0929573832006C7475 /* Rubik-Medium.ttf in Resources */,
 				AD7B5C55295C306C00AB55A2 /* loader.json in Resources */,
 				AD7F6C0129572C9F006C7475 /* LeagueTableViewCell.xib in Resources */,
 				AD7F6AFD29570FDD006C7475 /* LaunchScreen.storyboard in Resources */,
@@ -884,10 +885,9 @@
 				AD7F6B85295725FA006C7475 /* Dialogs.strings in Resources */,
 				AD7F6B87295725FA006C7475 /* Dialogs.storyboard in Resources */,
 				AD5777052959DF5200850043 /* LeagueDetailsTableViewCell.xib in Resources */,
+				AD16A3E02965941D000BBB93 /* NotoSans-Bold.ttf in Resources */,
 				AD7F6AF529570FDC006C7475 /* Main.storyboard in Resources */,
 				AD7F6BFA29572C8F006C7475 /* SideMenuTableViewCell.xib in Resources */,
-				AD7F6C0C29573832006C7475 /* Rubik-Regular.ttf in Resources */,
-				AD7F6C0B29573832006C7475 /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,15 +25,16 @@ class SettingsViewController: BaseViewController {
     }
     
     func setupNavBar(){
-        let lbl = getHeaderLabel(title: "Settings".localized)
-        self.navigationItem.titleView = lbl
-        setBackButton()
+        
+        let btn = getButton(image: UIImage(named: "back")!)
+       let header = getHeaderLabel(title: "Settings".localized,color: Colors.gray1Color())
+       self.navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: btn),UIBarButtonItem(customView: header)]
     }
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["juicey.dance@gmail.com"])
+            mail.setToRecipients([""])
             //mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
 
             present(mail, animated: true)
@@ -67,16 +68,16 @@ extension SettingsViewController:UITableViewDelegate,UITableViewDataSource{
             openVC(storyBoard: "Main", identifier: "LanguageViewController")
         case 1:
             
-            Utility.openUrl(url: URL(string: "https://excellencesports4.wordpress.com/privacy-policy/")!)
+            Utility.openUrl(url: URL(string: "")!)
             //ScorePro
         case 2:
-            Utility.shareAction(text: "Install Excellence Sports from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
+            Utility.shareAction(text: "Install Yueqiu Sports from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
             
         case 3:
             sendEmail()
             
         case 4:
-            Utility.rateApp(id: "1662072665")
+            Utility.rateApp(id: "")
             
             
         default:

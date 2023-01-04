@@ -89,7 +89,7 @@ class LeaguesViewController:BaseViewController {
     }
     
     func setupNavBar(){
-        self.navigationItem.titleView = getHeaderLabel(title: "Excellence Sports".localized)
+        self.navigationItem.titleView = getHeaderLabel(title: "Yueqiu Sports".localized)
         let menuBtn = getButton(image: UIImage(named: "menu")!)
         menuBtn.addTarget(self, action: #selector(toSettings), for: .touchUpInside)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: menuBtn)

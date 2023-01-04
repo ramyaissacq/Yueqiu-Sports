@@ -36,8 +36,10 @@ class LeagueDetailsViewController: BaseViewController {
     
     func initialSettings(){
         tableViewPlayers.register(UINib(nibName: "PlayerTableViewCell", bundle: nil), forCellReuseIdentifier: "playerTableViewCell")
-        self.navigationItem.titleView = getHeaderLabel(title: leagueName ?? "")
-        setBackButton()
+
+        let btn = getButton(image: UIImage(named: "back")!)
+       let header = getHeaderLabel(title: leagueName ?? "",color: Colors.gray1Color())
+       self.navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: btn),UIBarButtonItem(customView: header)]
         searchBar.searchTextField.backgroundColor = .white
         searchBar.searchTextField.textColor = .black
         searchBar.setImage(UIImage(named: "search"), for: .search, state: .normal)

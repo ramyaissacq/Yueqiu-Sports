@@ -25,7 +25,6 @@ class LanguageViewController: BaseViewController {
     
     
     func initialSettings(){
-        setBackButton()
         setupNavBar()
         tableView.register(UINib(nibName: "LanguageTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
@@ -50,8 +49,9 @@ class LanguageViewController: BaseViewController {
     }
     
     func setupNavBar(){
-        let lbl = getHeaderLabel(title: "Language".localized)
-        self.navigationItem.titleView = lbl
+        let btn = getButton(image: UIImage(named: "back")!)
+       let header = getHeaderLabel(title: "Language".localized,color: Colors.gray1Color())
+       self.navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: btn),UIBarButtonItem(customView: header)]
     }
     
     func resetLanguage(index:Int){

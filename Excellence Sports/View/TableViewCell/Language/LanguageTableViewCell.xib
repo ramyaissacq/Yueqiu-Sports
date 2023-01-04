@@ -2,14 +2,15 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Rubik-Regular.ttf">
-            <string>Rubik-Regular</string>
+        <array key="NotoSans-Medium.ttf">
+            <string>NotoSans-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -26,8 +27,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="321" height="60"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Language" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxd-xM-qsa">
-                                <rect key="frame" x="38" y="19.5" width="275" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="18"/>
+                                <rect key="frame" x="38" y="17.5" width="275" height="25"/>
+                                <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="18"/>
                                 <color key="textColor" name="black1"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,7 +41,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvL-Pg-JVF">
                                 <rect key="frame" x="0.0" y="59" width="321" height="1"/>
-                                <color key="backgroundColor" name="Violet2"/>
+                                <color key="backgroundColor" name="gray2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="WiD-9c-AAT"/>
                                 </constraints>
@@ -80,11 +81,11 @@
     </objects>
     <resources>
         <image name="popupDeselection" width="22" height="22"/>
-        <namedColor name="Violet2">
-            <color red="0.83137254901960789" green="0.81960784313725488" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="black1">
             <color red="0.18431372549019609" green="0.1803921568627451" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray2">
+            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

@@ -12,7 +12,6 @@ class ProfileViewController: BaseViewController {
 
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblPlayer: UILabel!
-    @IBOutlet weak var lblTeam: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     //Variables
@@ -28,8 +27,10 @@ class ProfileViewController: BaseViewController {
     }
     
     func initialSettings(){
-        setBackButton()
-        self.navigationItem.titleView = getHeaderLabel(title: "Player Info".localized)
+        
+         let btn = getButton(image: UIImage(named: "back")!)
+        let header = getHeaderLabel(title: "Player Info".localized,color: Colors.gray1Color())
+        self.navigationItem.leftBarButtonItems = [UIBarButtonItem(customView: btn),UIBarButtonItem(customView: header)]
         tableView.register(UINib(nibName: "LeagueDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "leagueDetailsTableViewCell")
         tableView.register(UINib(nibName: "PlayerTableViewCell", bundle: nil), forCellReuseIdentifier: "PlayerTableViewCell")
         tableView.register(UINib(nibName: "ProfileHeaderTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileHeaderTableViewCell")
@@ -40,10 +41,11 @@ class ProfileViewController: BaseViewController {
         else{
         lblPlayer.text = player?.nameEn
         }
-        lblTeam.text = team
         tableView.reloadData()
        
     }
+    
+    
     
     func getDataAt(index:Int) -> League?{
         
@@ -120,7 +122,7 @@ extension ProfileViewController:UITableViewDelegate,UITableViewDataSource{
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "leagueDetailsTableViewCell") as! LeagueDetailsTableViewCell
         cell.configureCell(obj: getDataAt(index: indexPath.row))
-        cell.keyColor = Colors.gray2Color()
+        cell.keyColor = Colors.gray1Color()
         cell.valueColor = .black
             return cell
 

@@ -25,9 +25,9 @@ class Colors: NSObject {
     }
     
     
-    class func gray2Color()->UIColor
+    class func gray1Color()->UIColor
     {
-        return UIColor(named: "gray2")!
+        return UIColor(named: "gray1")!
     }
     
     
