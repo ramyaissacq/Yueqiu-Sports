@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+ Yueqiu Sports
+
+  Created by Remya on 12/27/22.
+  
+*/
+
+"Yueqiu Sports" = "Yueqiu Sports";
+"Premier League" = "Premier League";
+"La Liga" = "La Liga";
+"Serie A" = "Serie A";
+"Bundesliga" = "Bundesliga";
+"Ligue 1" = "Ligue 1";
+"Chinese Super League" = "Chinese Super League";
+"AFC Champions League" = "AFC Champions League";
+"Asian Qualifiers" = "Asian Qualifiers";
+"South American Qualifier" = "South American Qualifier";
+"European Qualifier" = "European Qualifier";
+"World Cup" = "World Cup";
+"European Cup" = "European Cup";
+"Confederations Cup" = "Confederations Cup";
+"America's Cup" = "America's Cup";
+"Player Info" = "Player Info";
+"Full Name" = "Full Name";
+"Country" = "Country";
+"Birthday" = "Birthday";
+"Height" = "Height";
+"Weight" = "Weight";
+"Position" = "Position";
+"Number" = "Number";
+"Contract Ending" = "Contract Ending";
+"Language" = "Language";
+"Privacy Policy" = "Privacy Policy";
+"Share App" = "Share App";
+"Feedback" = "Feedback";
+"Rate Us" = "Rate Us";
+"Million" = "Million";
+"Home team wins" = "Home team wins";
+"Away team wins" = "Away team wins";
+"Draws" = "Draws";
+"Seasons" = "Seasons";
+"See More" = "See More";
+"Season Info" = "Season Info";
+"Performance" = "Performance";
+"Info" = "Info";
+"Season Name:" = "Season Name:";
+"Host Country:" = "Host Country:";
+"Start Date:" = "Start Date:";
+"End Date:" = "End Date:";
+"Overall/Avg" = "Overall/Avg";
+"Home" = "Home";
+"Away" = "Away";
+"Facts" = "Facts";
+"Leagues" = "Leagues";
+"Search Here" = "Search Here";
+"Settings" = "Settings";

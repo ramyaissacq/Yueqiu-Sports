@@ -1,6 +1,0 @@
-framework module Pods_Excellence_Sports {
-  umbrella header "Pods-Excellence Sports-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+ Yueqiu Sports
+
+  Created by Remya on 12/27/22.
+  
+*/
+
+"Yueqiu Sports" = "悦球体育";
+"Premier League" = "超级联赛";
+"La Liga" = "西甲";
+"Serie A" = "意甲";
+"Bundesliga" = "德甲";
+"Ligue 1" = "法甲";
+"Chinese Super League" = "中超";
+"AFC Champions League" = "亚冠";
+"Asian Qualifiers" = "亚洲预选赛";
+"South American Qualifier" = "南美预选赛";
+"European Qualifier" = "欧洲预选赛";
+"World Cup" = "世界杯";
+"European Cup" = "欧洲杯";
+"Confederations Cup" = "联合会杯";
+"America's Cup" = "美洲杯";
+"Player Info" = "球员信息";
+"Full Name" = "全名";
+"Country" = "国家";
+"Birthday" = "生日";
+"Height" = "身高";
+"Weight" = "体重";
+"Position" = "岗位";
+"Number" = "数量";
+"Contract Ending" = "合同到期";
+"Language" = "语言";
+"Privacy Policy" = "隐私政策";
+"Share App" = "分享应用程序";
+"Feedback" = "反馈信息";
+"Rate Us" = "评价我们";
+"Million" = "百万";
+"Home team wins" = "主队获胜";
+"Away team wins" = "客队获胜";
+"Draws" = "黄牌";
+"Seasons" = "季节";
+"See More" = "查看更多";
+"Season Info" = "季节信息";
+"Performance" = "表现";
+"Info" = "信息";
+"Season Name:" = "季节名称:";
+"Host Country:" = "主办国家:";
+"Start Date:" = "开始日期:";
+"End Date:" = "结束日期:";
+"Overall/Avg" = "总成绩/平均成绩";
+"Home" = "主场";
+"Away" = "客场";
+"Facts" = "事实";
+"Leagues" = "联赛";
+"Search Here" = "搜索";
+"Settings" = "设置";

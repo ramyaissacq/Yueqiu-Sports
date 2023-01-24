@@ -1,0 +1,63 @@
+
+/* Class = "UILabel"; text = " "; ObjectID = "14t-pp-ToW"; */
+"14t-pp-ToW.text" = " ";
+
+/* Class = "UISearchBar"; placeholder = "Search Here"; ObjectID = "7At-Og-csJ"; */
+"7At-Og-csJ.placeholder" = "Search Here";
+
+/* Class = "UILabel"; text = "Leagues"; ObjectID = "7xl-uW-vE2"; */
+"7xl-uW-vE2.text" = "Leagues";
+
+/* Class = "UILabel"; text = "Seasons"; ObjectID = "GcT-Pm-HqJ"; */
+"GcT-Pm-HqJ.text" = "Seasons";
+
+/* Class = "UIButton"; configuration.title = "Info"; ObjectID = "OUx-Tf-oif"; */
+"OUx-Tf-oif.configuration.title" = "Info";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OUx-Tf-oif"; */
+"OUx-Tf-oif.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = " "; ObjectID = "Pi0-xE-KGW"; */
+"Pi0-xE-KGW.text" = " ";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "QkW-br-yTh"; */
+"QkW-br-yTh.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "See More"; ObjectID = "VF1-NG-l3f"; */
+"VF1-NG-l3f.text" = "See More";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "W5c-uK-dtJ"; */
+"W5c-uK-dtJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Seasons"; ObjectID = "ZIL-Vw-bWt"; */
+"ZIL-Vw-bWt.text" = "Seasons";
+
+/* Class = "UISearchBar"; placeholder = "Search Here"; ObjectID = "bHy-es-KBl"; */
+"bHy-es-KBl.placeholder" = "Search Here";
+
+/* Class = "UIButton"; configuration.title = "Performance"; ObjectID = "brN-rU-ULL"; */
+"brN-rU-ULL.configuration.title" = "Performance";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "brN-rU-ULL"; */
+"brN-rU-ULL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "See More"; ObjectID = "cZk-5O-1SV"; */
+"cZk-5O-1SV.text" = "See More";
+
+/* Class = "UILabel"; text = "Leagues"; ObjectID = "eYO-8Y-FZD"; */
+"eYO-8Y-FZD.text" = "Leagues";
+
+/* Class = "UISearchBar"; placeholder = "Search Here"; ObjectID = "oJl-7p-s3X"; */
+"oJl-7p-s3X.placeholder" = "Search Here";
+
+/* Class = "UILabel"; text = "See More"; ObjectID = "tK4-f2-6fs"; */
+"tK4-f2-6fs.text" = "See More";
+
+/* Class = "UILabel"; text = "Players"; ObjectID = "tKX-Fn-WaE"; */
+"tKX-Fn-WaE.text" = "Players";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tZA-rm-ZuJ"; */
+"tZA-rm-ZuJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Most valued players in the league"; ObjectID = "ytH-Iv-g4d"; */
+"ytH-Iv-g4d.text" = "Most valued players in the league";

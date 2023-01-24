@@ -1,11 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Excellence Sports' do
+target 'Yueqiu Sports' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Excellence Sports
+  # Pods for Yueqiu Sports
+
 pod 'Alamofire' #Webservice
  pod 'SwiftyJSON' #API mapping
  pod 'ProgressHUD' # Progress View
@@ -16,13 +17,14 @@ pod 'Alamofire' #Webservice
  pod 'MOLH'
  pod 'lottie-ios'
  pod 'ImageSlideshow/Kingfisher'
+ pod 'Charts'
 
-  target 'Excellence SportsTests' do
+  target 'Yueqiu SportsTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'Excellence SportsUITests' do
+  target 'Yueqiu SportsUITests' do
     # Pods for testing
   end
 

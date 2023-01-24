@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSans-SemiBold.ttf">
+            <string>NotoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectionCollectionViewCell" customModule="Excellence_Sports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-mX-rbG">
+                        <rect key="frame" x="0.0" y="0.0" width="268" height="91"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz2-aO-Xld">
+                                <rect key="frame" x="127" y="33" width="14.5" height="25"/>
+                                <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvj-Sq-VwL">
+                                <rect key="frame" x="0.0" y="87" width="268" height="2"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="he0-VC-lL9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xvj-Sq-VwL" secondAttribute="bottom" constant="2" id="1Lc-aB-fVW"/>
+                            <constraint firstItem="Lz2-aO-Xld" firstAttribute="centerX" secondItem="hA4-mX-rbG" secondAttribute="centerX" id="Agz-rH-17k"/>
+                            <constraint firstItem="xvj-Sq-VwL" firstAttribute="leading" secondItem="hA4-mX-rbG" secondAttribute="leading" id="JEl-0g-bZe"/>
+                            <constraint firstItem="xvj-Sq-VwL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lz2-aO-Xld" secondAttribute="bottom" constant="2" id="M0w-y4-PyL"/>
+                            <constraint firstAttribute="trailing" secondItem="xvj-Sq-VwL" secondAttribute="trailing" id="POw-jV-Jth"/>
+                            <constraint firstItem="Lz2-aO-Xld" firstAttribute="centerY" secondItem="hA4-mX-rbG" secondAttribute="centerY" id="TXa-Zh-gUT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lz2-aO-Xld" secondAttribute="trailing" constant="8" id="ak5-pe-ben"/>
+                            <constraint firstItem="Lz2-aO-Xld" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hA4-mX-rbG" secondAttribute="leading" constant="8" id="xSG-bZ-34u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hA4-mX-rbG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CwU-LS-8GG"/>
+                <constraint firstAttribute="trailing" secondItem="hA4-mX-rbG" secondAttribute="trailing" id="gZq-Gg-eeX"/>
+                <constraint firstItem="hA4-mX-rbG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="plE-TI-HUl"/>
+                <constraint firstAttribute="bottom" secondItem="hA4-mX-rbG" secondAttribute="bottom" id="zvK-XM-Vj2"/>
+            </constraints>
+            <size key="customSize" width="268" height="91"/>
+            <connections>
+                <outlet property="lblTitle" destination="Lz2-aO-Xld" id="8ib-ht-hdQ"/>
+                <outlet property="underLineView" destination="xvj-Sq-VwL" id="J7O-11-BgL"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="60.602678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.40392156862745099" green="0.67843137254901964" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

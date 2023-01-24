@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+ Yueqiu Sports
+
+  Created by Remya on 12/27/22.
+  
+*/
+
+"Yueqiu Sports" = "Yueqiu Sports";
+"Premier League" = "Premier League";
+"La Liga" = "La Liga";
+"Serie A" = "Serie A";
+"Bundesliga" = "Bundesliga";
+"Ligue 1" = "Ligue 1";
+"Chinese Super League" = "Super League Trung Quốc";
+"AFC Champions League" = "AFC Champions League";
+"Asian Qualifiers" = "Vòng loại Châu Á";
+"South American Qualifier" = "Vòng loại Nam Mỹ";
+"European Qualifier" = "Vòng loại Châu Âu";
+"World Cup" = "Cúp thế giới";
+"European Cup" = "Cúp châu Âu";
+"Confederations Cup" = "Cúp Liên đoàn các châu lục";
+"America's Cup" = "Cup của Mỹ";
+"Player Info" = "Thông tin người chơi";
+"Full Name" = "Họ và tên";
+"Country" = "Quốc gia";
+"Birthday" = "Ngày sinh nhật";
+"Height" = "Chiều cao";
+"Weight" = "Cân nặng";
+"Position" = "Chức vụ";
+"Number" = "Con số";
+"Contract Ending" = "Kết thúc hợp đồng";
+"Language" = "Ngôn ngữ";
+"Privacy Policy" = "Chính sách bảo mật";
+"Share App" = "Chia sẻ ứng dụng";
+"Feedback" = "Phản hồi";
+"Rate Us" = "Đánh giá chúng tôi";
+"Million" = "Triệu";
+"Home team wins" = "Home team wins";
+"Away team wins" = "Away team wins";
+"Draws" = "Draws";
+"Seasons" = "Các mùa";
+"See More" = "Xem thêm";
+"Season Info" = "Thông tin mùa";
+"Performance" = "Hiệu suất";
+"Info" = "Thông tin";
+"Season Name:" = "Tên mùa:";
+"Host Country:" = "Nước chủ nhà:";
+"Start Date:" = "Ngày bắt đầu:";
+"End Date:" = "Ngày cuối:";
+"Overall/Avg" = "Tổng thể/Trung bình";
+"Home" = "Nhà";
+"Away" = "Xa";
+"Facts" = "sự kiện";
+"Leagues" = "giải đấu";
+"Search Here" = "Tìm kiếm ở đây";
+"Settings" = "Cài đặt";
