@@ -19,7 +19,12 @@ class HomeViewModel{
 
     func getPlyearList(pageNumber:Int){
         HomeAPI().getPlyearsList(pageNumber: pageNumber) { response in
+            if self.plyaerDetailsResponse == nil{
             self.plyaerDetailsResponse = response
+            }
+            else{
+                self.plyaerDetailsResponse?.data?.append(contentsOf: response?.data ?? [])
+            }
             self.delegate?.didFinishFetchPlyears()
         } failed: { _ in
             

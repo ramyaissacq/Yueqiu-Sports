@@ -481,6 +481,27 @@ extension UIView {
         animation.values = [translation, -translation]
         layer.add(animation, forKey: "shake")
     }
+    
+    func fadeIn(_ duration: TimeInterval = 0.2, onCompletion: (() -> Void)? = nil) {
+            self.alpha = 0
+            self.isHidden = false
+            UIView.animate(withDuration: duration,
+                           animations: { self.alpha = 1 },
+                           completion: { (value: Bool) in
+                              if let complete = onCompletion { complete() }
+                           }
+            )
+        }
+    
+    func fixInView(_ container: UIView!) -> Void{
+        self.translatesAutoresizingMaskIntoConstraints = false;
+        self.frame = container.frame;
+        container.addSubview(self);
+        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+    }
 }
 
 extension UIScrollView {

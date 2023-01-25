@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPro-Light.ttf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutPlayerTableViewCell" rowHeight="393" id="KGk-i7-Jjw" customClass="AboutPlayerTableViewCell" customModule="Yueqiu_Sports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="393"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="393"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEJ-TW-8pR">
+                        <rect key="frame" x="10" y="0.0" width="319" height="385"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB0-zU-P3X">
+                                <rect key="frame" x="8" y="16" width="303" height="26"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="22"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmV-9i-KAL">
+                                <rect key="frame" x="8" y="50" width="303" height="327"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7H-nN-ncq">
+                                        <rect key="frame" x="8" y="12" width="287" height="82"/>
+                                        <string key="text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for Saudi Professional League club Al Nassr and captains the Portugal national team</string>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-Jh-u1A" customClass="NestedUITableView" customModule="Yueqiu_Sports" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="106" width="295" height="209"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" name="PlayerCharacteristicCellColor"/>
+                                <constraints>
+                                    <constraint firstItem="fKN-Jh-u1A" firstAttribute="leading" secondItem="SmV-9i-KAL" secondAttribute="leading" constant="4" id="5iU-ku-8t7"/>
+                                    <constraint firstItem="y7H-nN-ncq" firstAttribute="leading" secondItem="SmV-9i-KAL" secondAttribute="leading" constant="8" id="ABr-zm-XZo"/>
+                                    <constraint firstItem="y7H-nN-ncq" firstAttribute="top" secondItem="SmV-9i-KAL" secondAttribute="top" constant="12" id="YWn-tv-WYA"/>
+                                    <constraint firstItem="fKN-Jh-u1A" firstAttribute="top" secondItem="y7H-nN-ncq" secondAttribute="bottom" constant="12" id="eCy-bP-BVG"/>
+                                    <constraint firstAttribute="trailing" secondItem="y7H-nN-ncq" secondAttribute="trailing" constant="8" id="jEO-64-Esk"/>
+                                    <constraint firstAttribute="bottom" secondItem="fKN-Jh-u1A" secondAttribute="bottom" constant="12" id="jda-XG-kZ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="fKN-Jh-u1A" secondAttribute="trailing" constant="4" id="oTp-Iw-laC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="PlayerCharacteristicCellBorderColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SmV-9i-KAL" secondAttribute="trailing" constant="8" id="5WI-qX-EGc"/>
+                            <constraint firstAttribute="trailing" secondItem="AB0-zU-P3X" secondAttribute="trailing" constant="8" id="PmC-Ca-0yP"/>
+                            <constraint firstItem="SmV-9i-KAL" firstAttribute="top" secondItem="AB0-zU-P3X" secondAttribute="bottom" constant="8" id="W4n-My-vfx"/>
+                            <constraint firstItem="AB0-zU-P3X" firstAttribute="top" secondItem="EEJ-TW-8pR" secondAttribute="top" constant="16" id="aPJ-Ua-i22"/>
+                            <constraint firstAttribute="bottom" secondItem="SmV-9i-KAL" secondAttribute="bottom" constant="8" id="fS4-II-GUL"/>
+                            <constraint firstItem="AB0-zU-P3X" firstAttribute="leading" secondItem="EEJ-TW-8pR" secondAttribute="leading" constant="8" id="gcW-hh-iNJ"/>
+                            <constraint firstItem="SmV-9i-KAL" firstAttribute="leading" secondItem="EEJ-TW-8pR" secondAttribute="leading" constant="8" id="zoE-SG-IhK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="EEJ-TW-8pR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0P3-Rd-64h"/>
+                    <constraint firstItem="EEJ-TW-8pR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NEC-h3-1yC"/>
+                    <constraint firstAttribute="trailing" secondItem="EEJ-TW-8pR" secondAttribute="trailing" constant="10" id="TOQ-e3-J6h"/>
+                    <constraint firstAttribute="bottom" secondItem="EEJ-TW-8pR" secondAttribute="bottom" constant="8" id="WKT-fg-N5n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="aboutPlayerLabel" destination="y7H-nN-ncq" id="qfN-1M-b0c"/>
+                <outlet property="cellBackgroundColour" destination="EEJ-TW-8pR" id="xmX-Sg-JQJ"/>
+                <outlet property="nestedTableView" destination="fKN-Jh-u1A" id="URm-2I-bKa"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="226.67410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.40392156862745099" green="0.67843137254901964" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlayerCharacteristicCellBorderColor">
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlayerCharacteristicCellColor">
+            <color red="0.97299998998641968" green="0.98000001907348633" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

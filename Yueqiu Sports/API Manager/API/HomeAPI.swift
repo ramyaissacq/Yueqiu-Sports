@@ -101,5 +101,20 @@ class HomeAPI: WebService {
             completion(response)
         }, failed: failed)
     }
+    
+    func getPlayerDetails(slug:String,completion:@escaping (PlayerDetailResponse) -> Void, failed: @escaping (String) -> Void){
+        
+        let url = "https://app.8com.cloud/api/v1/sportscore/data/player.php"
+        var lang = Utility.getCurrentLang()
+        if lang == "cn"{
+            lang = "zh"
+        }
+        let params = ["lang":lang, "slug":slug] as [String : Any]
+        
+        post(url: url, params: params, completion: { json in
+            let response = PlayerDetailResponse(json!)
+            completion(response)
+        }, failed: failed)
+    }
    
 }

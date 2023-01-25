@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPro-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFPro-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NestedTableViewCell" rowHeight="393" id="KGk-i7-Jjw" customClass="NestedTableViewCell" customModule="SportScore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="393"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="393"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEJ-TW-8pR">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="393"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wa-jy-yyP">
+                                <rect key="frame" x="8" y="4" width="323" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Main Position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB0-zU-P3X">
+                                        <rect key="frame" x="0.0" y="0.0" width="255.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" name="NestedTableKeyTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goalkeeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWW-Es-07K">
+                                        <rect key="frame" x="255.5" y="0.0" width="67.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWW-Yx-4Qj">
+                                <rect key="frame" x="8" y="22" width="323" height="1"/>
+                                <color key="backgroundColor" name="PlayerCharacteristicCellBorderColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3N5-Pm-rGd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rWW-Yx-4Qj" secondAttribute="bottom" constant="8" id="4YU-Jq-aER"/>
+                            <constraint firstItem="2wa-jy-yyP" firstAttribute="leading" secondItem="EEJ-TW-8pR" secondAttribute="leading" constant="8" id="5iD-Sf-l3t"/>
+                            <constraint firstItem="rWW-Yx-4Qj" firstAttribute="top" secondItem="2wa-jy-yyP" secondAttribute="bottom" constant="1" id="7R4-aU-m89"/>
+                            <constraint firstItem="rWW-Yx-4Qj" firstAttribute="trailing" secondItem="2wa-jy-yyP" secondAttribute="trailing" id="JvP-2I-WUd"/>
+                            <constraint firstAttribute="trailing" secondItem="2wa-jy-yyP" secondAttribute="trailing" constant="8" id="YPr-Xi-5Xf"/>
+                            <constraint firstItem="rWW-Yx-4Qj" firstAttribute="leading" secondItem="2wa-jy-yyP" secondAttribute="leading" id="ch7-Ig-i6D"/>
+                            <constraint firstItem="2wa-jy-yyP" firstAttribute="top" secondItem="EEJ-TW-8pR" secondAttribute="top" constant="4" id="wb6-yb-pim"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="EEJ-TW-8pR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0P3-Rd-64h"/>
+                    <constraint firstItem="EEJ-TW-8pR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NEC-h3-1yC"/>
+                    <constraint firstAttribute="trailing" secondItem="EEJ-TW-8pR" secondAttribute="trailing" id="TOQ-e3-J6h"/>
+                    <constraint firstAttribute="bottom" secondItem="EEJ-TW-8pR" secondAttribute="bottom" id="WKT-fg-N5n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="attributeNameLabel" destination="AB0-zU-P3X" id="gwv-5Z-CNa"/>
+                <outlet property="attributeValueLabel" destination="HWW-Es-07K" id="hpQ-33-WeM"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="226.67410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="NestedTableKeyTextColor">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlayerCharacteristicCellBorderColor">
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

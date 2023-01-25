@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPro-Light.ttf">
+            <string>SFProDisplay-Light</string>
+        </array>
+        <array key="SFPro-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFPro-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchesTableViewCell" rowHeight="616" id="Ktk-ji-owT" customClass="MatchesTableViewCell" customModule="SportScore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ktk-ji-owT" id="6Xv-hQ-olL">
+                <rect key="frame" x="0.0" y="0.0" width="483" height="316"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKm-d7-HMg">
+                        <rect key="frame" x="16" y="20" width="451" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poS-at-URM">
+                                <rect key="frame" x="8" y="8" width="435" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-XQ-SdK">
+                                        <rect key="frame" x="253" y="6" width="170" height="52"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Z7-bB-66U">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="52"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Played" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZN-ow-Uxz">
+                                                        <rect key="frame" x="8" y="26" width="40" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="20r-nN-2Rp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="10"/>
+                                                        <color key="textColor" name="NestedTableKeyTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z20-2Q-KoC">
+                                                        <rect key="frame" x="4" y="4" width="48" height="17"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="PlayerCharacteristicCellColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="OZN-ow-Uxz" firstAttribute="leading" secondItem="2Z7-bB-66U" secondAttribute="leading" constant="8" id="1NN-w4-ekU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OZN-ow-Uxz" secondAttribute="bottom" constant="2" id="6rQ-IE-rjS"/>
+                                                    <constraint firstItem="z20-2Q-KoC" firstAttribute="top" secondItem="2Z7-bB-66U" secondAttribute="top" constant="4" id="BqN-gW-dDL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OZN-ow-Uxz" secondAttribute="trailing" constant="8" id="Smd-Xc-Jw1"/>
+                                                    <constraint firstItem="z20-2Q-KoC" firstAttribute="leading" secondItem="2Z7-bB-66U" secondAttribute="leading" constant="4" id="c7Z-AM-mWa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z20-2Q-KoC" secondAttribute="trailing" constant="4" id="z3X-Hw-1Um"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-hz-UvX">
+                                                <rect key="frame" x="60" y="0.0" width="50" height="52"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-ez-TPY">
+                                                        <rect key="frame" x="4" y="4" width="42" height="17"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dK-1b-sPa">
+                                                        <rect key="frame" x="8" y="38" width="34" height="12"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="10"/>
+                                                        <color key="textColor" name="NestedTableKeyTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="PlayerCharacteristicCellColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3lf-ez-TPY" secondAttribute="trailing" constant="4" id="0Ld-cj-4MX"/>
+                                                    <constraint firstItem="3lf-ez-TPY" firstAttribute="leading" secondItem="3vA-hz-UvX" secondAttribute="leading" constant="4" id="2fU-wc-IRs"/>
+                                                    <constraint firstItem="0dK-1b-sPa" firstAttribute="leading" secondItem="3vA-hz-UvX" secondAttribute="leading" constant="8" id="7YI-Mb-R4Y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0dK-1b-sPa" secondAttribute="trailing" constant="8" id="BYl-27-pJw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0dK-1b-sPa" secondAttribute="bottom" constant="2" id="Yft-Cb-Ion"/>
+                                                    <constraint firstItem="3lf-ez-TPY" firstAttribute="top" secondItem="3vA-hz-UvX" secondAttribute="top" constant="4" id="rer-fZ-j1k"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhN-OW-Hcc">
+                                                <rect key="frame" x="114" y="0.0" width="56" height="52"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lys-yV-KWd">
+                                                        <rect key="frame" x="4" y="4" width="48" height="17"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes per game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hh-dN-MHv">
+                                                        <rect key="frame" x="8" y="26" width="40" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="wQi-EE-2gz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="10"/>
+                                                        <color key="textColor" name="NestedTableKeyTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="PlayerCharacteristicCellColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="1Hh-dN-MHv" secondAttribute="trailing" constant="8" id="0IH-mT-CeV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1Hh-dN-MHv" secondAttribute="bottom" constant="2" id="1bw-vO-Fcf"/>
+                                                    <constraint firstItem="lys-yV-KWd" firstAttribute="leading" secondItem="dhN-OW-Hcc" secondAttribute="leading" constant="4" id="QuO-zX-Lda"/>
+                                                    <constraint firstItem="lys-yV-KWd" firstAttribute="top" secondItem="dhN-OW-Hcc" secondAttribute="top" constant="4" id="VwF-GJ-eSb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lys-yV-KWd" secondAttribute="trailing" constant="4" id="hvd-o9-7LY"/>
+                                                    <constraint firstItem="1Hh-dN-MHv" firstAttribute="leading" secondItem="dhN-OW-Hcc" secondAttribute="leading" constant="8" id="nVp-9q-hGn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dhN-OW-Hcc" firstAttribute="height" secondItem="2Z7-bB-66U" secondAttribute="height" id="lXc-QI-KXn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puo-bz-diM">
+                                        <rect key="frame" x="12" y="23.5" width="51" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fEr-XQ-SdK" firstAttribute="centerY" secondItem="poS-at-URM" secondAttribute="centerY" id="D3T-No-d8w"/>
+                                    <constraint firstAttribute="trailing" secondItem="fEr-XQ-SdK" secondAttribute="trailing" constant="12" id="Keq-QG-ei0"/>
+                                    <constraint firstItem="fEr-XQ-SdK" firstAttribute="top" secondItem="poS-at-URM" secondAttribute="top" constant="6" id="c7Z-cQ-efZ"/>
+                                    <constraint firstAttribute="height" constant="64" id="hET-W9-OyS"/>
+                                    <constraint firstItem="puo-bz-diM" firstAttribute="centerY" secondItem="poS-at-URM" secondAttribute="centerY" id="lzC-AT-wiU"/>
+                                    <constraint firstAttribute="bottom" secondItem="fEr-XQ-SdK" secondAttribute="bottom" constant="6" id="pxo-F6-6TX"/>
+                                    <constraint firstItem="puo-bz-diM" firstAttribute="leading" secondItem="poS-at-URM" secondAttribute="leading" constant="12" id="txT-sb-0R0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="-2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="PlayerCharacteristicCellColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="poS-at-URM" secondAttribute="trailing" constant="8" id="2cc-Rn-rZb"/>
+                            <constraint firstItem="poS-at-URM" firstAttribute="leading" secondItem="zKm-d7-HMg" secondAttribute="leading" constant="8" id="hP3-9k-m0v"/>
+                            <constraint firstItem="poS-at-URM" firstAttribute="top" secondItem="zKm-d7-HMg" secondAttribute="top" constant="8" id="kr9-n8-MMK"/>
+                            <constraint firstAttribute="bottom" secondItem="poS-at-URM" secondAttribute="bottom" constant="8" id="ye2-M8-3d7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.69999999999999996"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="PlayerCharacteristicCellBorderColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zKm-d7-HMg" secondAttribute="trailing" constant="16" id="1C8-Ah-eiv"/>
+                    <constraint firstItem="zKm-d7-HMg" firstAttribute="top" secondItem="6Xv-hQ-olL" secondAttribute="top" constant="20" id="2CR-K4-5LN"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zKm-d7-HMg" secondAttribute="bottom" constant="12" id="MTJ-NS-qc3"/>
+                    <constraint firstItem="zKm-d7-HMg" firstAttribute="leading" secondItem="6Xv-hQ-olL" secondAttribute="leading" constant="16" id="qfn-Fs-RcJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="WSv-xB-NLg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="labelGamesStarted" destination="3lf-ez-TPY" id="s79-as-MPw"/>
+                <outlet property="labelMinutesPerGame" destination="lys-yV-KWd" id="ILW-dK-3Ob"/>
+                <outlet property="labelTotalGamesPlayed" destination="z20-2Q-KoC" id="8En-xF-RE8"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="378"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="NestedTableKeyTextColor">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlayerCharacteristicCellBorderColor">
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlayerCharacteristicCellColor">
+            <color red="0.97299998998641968" green="0.98000001907348633" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

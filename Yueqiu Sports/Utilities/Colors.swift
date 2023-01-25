@@ -10,8 +10,6 @@ class Colors: NSObject {
     }
     
   
-    
-    
    
     //New colors
     class func gradient1Color()->UIColor
@@ -50,5 +48,16 @@ class Colors: NSObject {
     {
         return UIColor(named: "yellow2")!
     }
+    
+    class func PlayerAttributeBoxColor()->UIColor
+    {
+        return UIColor(named: "PlayerAttributeBoxColor")!
+    }
+    
+    class func PlayerCharacteristicCellBorderColor()->UIColor
+    {
+        return UIColor(named: "PlayerCharacteristicCellBorderColor")!
+    }
+    
     
 }

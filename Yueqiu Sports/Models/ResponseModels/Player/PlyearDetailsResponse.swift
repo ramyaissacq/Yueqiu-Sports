@@ -12,7 +12,7 @@ struct PlayerDetailsResponse {
     
         let status: Int?
         let message: String?
-        let data: [PlayerDetailsData]?
+        var data: [PlayerDetailsData]?
         let total: Int?
         let perPage: Int?
 

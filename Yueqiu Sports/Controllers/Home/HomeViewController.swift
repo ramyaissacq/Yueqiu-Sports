@@ -10,6 +10,7 @@ import ImageSlideshow
 
 class HomeViewController:BaseViewController {
 
+    @IBOutlet weak var fixedPlayer: UILabel!
     @IBOutlet weak var fixedSeeMorePlayer: UILabel!
     @IBOutlet weak var fixedSeeMore2: UILabel!
     @IBOutlet weak var fixedSeeMore: UILabel!
@@ -49,15 +50,21 @@ class HomeViewController:BaseViewController {
     }
     
     
+    @IBAction func actionSearch(_ sender: UIButton) {
+        openLeagues()
+    }
+    
+    
     func initialSettings(){
         fixedLeagues.text = "Leagues".localized
         fixedSeasons.text = "Seasons".localized
         fixedSeeMore2.text = "See More".localized
         fixedSeeMore.text = "See More".localized
+        fixedSeeMorePlayer.text = "See More".localized
+        fixedPlayer.text = "Players".localized
         
         FootballLeague.populateFootballLeagues()
         leagues = FootballLeague.leagues
-        searchBar.delegate = self
         searchBar.searchTextField.backgroundColor = .white
         searchBar.searchTextField.textColor = .black
         searchBar.setImage(UIImage(named: "search"), for: .search, state: .normal)
@@ -79,10 +86,14 @@ class HomeViewController:BaseViewController {
     }
     
     
+    @IBAction func actionMorePlayers(_ sender: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PlayersViewController")
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
     
     @IBAction func actionSeeMoreLeagues(_ sender: Any) {
         openLeagues()
-
     }
     
     @IBAction func actionSeeMoreSeasons(){
@@ -329,7 +340,13 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
         }
         else{
             if collectionView == collectionViewPlyears{
-                //i think when user press
+                    
+                    let storyboard = UIStoryboard(name: "Player", bundle: nil)
+                    let viewController = storyboard.instantiateViewController(withIdentifier: "PayerDetailsViewController") as! PayerDetailsViewController
+                    viewController.currentPlayer = viewModel.plyaerDetailsResponse?.data?[indexPath.row]
+                    self.navigationController?.pushViewController(viewController, animated: true)
+                
+                
             }
             else{
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "SeasonDetailsViewController") as! SeasonDetailsViewController
@@ -348,21 +365,5 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
 }
 
 
-extension HomeViewController:UISearchBarDelegate{
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-//        searchBar.endEditing(true)
-//        searchBar.delegate = nil
-        openLeagues()
-        searchBar.endEditing(true)
-        
-        
-        
-    }
-    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
-        return true
-    }
-    
-    
-    
-}
+
 
