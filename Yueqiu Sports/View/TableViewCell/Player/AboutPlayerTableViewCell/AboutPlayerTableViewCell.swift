@@ -9,6 +9,7 @@ import UIKit
 
 class AboutPlayerTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var fixedAboutPlayer: UILabel!
     @IBOutlet weak var cellBackgroundColour: UIView!
     @IBOutlet weak var nestedTableView: NestedUITableView!
     @IBOutlet weak var aboutPlayerLabel: UILabel!
@@ -31,6 +32,7 @@ class AboutPlayerTableViewCell: UITableViewCell {
         nestedTableView.register(nib, forCellReuseIdentifier: "NestedTableViewCell")
         nestedTableView.delegate = self
         nestedTableView.dataSource = self
+        fixedAboutPlayer.text = "About Player".localized
     }
 }
 

@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import Lottie
 
 class PayerDetailsViewController: BaseViewController {
     
+    @IBOutlet weak var fixedRating: UILabel!
+    @IBOutlet weak var fixedNumber: UILabel!
+    @IBOutlet weak var fixedMarketPrice: UILabel!
+    @IBOutlet weak var fixedAge: UILabel!
     @IBOutlet weak var tableView : UITableView!
     @IBOutlet weak var playerCharacteristicsCollectionView : UICollectionView!
     @IBOutlet weak var playerNameLabel : UILabel!
@@ -21,6 +26,8 @@ class PayerDetailsViewController: BaseViewController {
     @IBOutlet weak var playerRatingLabel : UILabel!
     @IBOutlet weak var playerImageView : UIImageView!
     @IBOutlet weak var playerClubImageView : UIImageView!
+    @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var animationView: AnimationView!
     
     let viewModel = PayerDetailsViewModel()
     var currentPlayer : PlayerDetailsData?
@@ -45,6 +52,9 @@ class PayerDetailsViewController: BaseViewController {
     }
 
     func setupUI() {
+        configureLottieAnimation()
+        let btn = getBackButton(image: UIImage(named: "WhiteBack"))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
         
         tableView.register(UINib(nibName: "AboutPlayerTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutPlayerTableViewCell")
         tableView.register(UINib(nibName: "PlayerAttributeTableViewCell", bundle: nil), forCellReuseIdentifier: "PlayerAttributeTableViewCell")
@@ -59,6 +69,19 @@ class PayerDetailsViewController: BaseViewController {
         
         let tableBackgroundView = TableBackgroundView.init(frame: CGRectMake(0, 0, UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height * 0.4))
         tableView.backgroundView = tableBackgroundView
+        fixedRating.text = "Rating".localized
+        fixedNumber.text = "Number".localized
+        fixedMarketPrice.text = "Market Price".localized
+        fixedAge.text = "Age".localized
+        
+      
+    }
+    
+    func configureLottieAnimation(){
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 0.5
+        animationView.play()
     }
     
     func configureViewModel() {
@@ -72,7 +95,16 @@ class PayerDetailsViewController: BaseViewController {
                 self?.tableView.fadeIn(0.4)
                 self?.setupPlayerUI()
                 self?.tableView.reloadData()
+                if self?.viewModel.playerData != nil{
+                    self?.emptyView.isHidden = true
+                    self?.animationView.stop()
+                }
+                else{
+                    self?.emptyView.isHidden = false
+                    self?.animationView.play()
+                }
             }
+            
         }
         viewModel.fetchPlayterDetails(player: currentPlayer)
     }
@@ -157,22 +189,22 @@ extension PayerDetailsViewController:  UICollectionViewDelegate,UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let item = viewModel.characteristics[indexPath.item] as [String:String]
-        if item["title"] == "Info" {
+        if item["title"] == "Info".localized {
             
             self.tableView.dataSource = self
             self.tableView.delegate = self
             
-        } else if item["title"] == "Events" {
+        } else if item["title"] == "Events".localized {
             
             self.tableView.dataSource = eventTableViewHelper
             self.tableView.delegate = eventTableViewHelper
             
-        } else if item["title"] == "Media" {
+        } else if item["title"] == "Media".localized {
             
             self.tableView.dataSource = mediaTableViewHelper
             self.tableView.delegate = mediaTableViewHelper
             
-        } else if item["title"] == "Statistics" {
+        } else if item["title"] == "Statistics".localized {
             
             self.tableView.dataSource = statsTableViewHelper
             self.tableView.delegate = statsTableViewHelper

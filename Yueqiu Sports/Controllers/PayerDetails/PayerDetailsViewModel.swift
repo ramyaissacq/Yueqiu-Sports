@@ -13,10 +13,10 @@ class PayerDetailsViewModel {
     
     var playerData : PlayerData?
     
-    var characteristics = [["image":"info", "title":"Info"],
-                           ["image":"stats", "title":"Statistics"],
-                           ["image":"events", "title":"Events"],
-                           ["image":"media", "title":"Media"],
+    var characteristics = [["image":"info", "title":"Info".localized],
+                           ["image":"stats", "title":"Statistics".localized],
+                           ["image":"events", "title":"Events".localized],
+                           ["image":"media", "title":"Media".localized],
     ]
     
     var characteristicsCellWidth = [100.0, 140.0, 122.0, 118.0]

@@ -110,7 +110,8 @@ class HomeViewController:BaseViewController {
     func setupLeftView(){
       
         if AppPreferences.getMapObject() != nil{
-            let btn = getBackButton()
+           
+            let btn = getButton(image: UIImage(named: "next"))
             //let gradient = btn.getGradientLayer(bounds: btn.bounds)
             btn.backgroundColor = Colors.accentColor()
             btn.cornerRadius = 4

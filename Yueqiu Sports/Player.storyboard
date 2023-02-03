@@ -240,13 +240,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0GK-qU-M1B">
                                                     <rect key="frame" x="111.33333333333333" y="24.333333333333318" width="233.66666666666669" height="44.333333333333343"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Manchester United" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz0-hE-g9u">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manchester United" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz0-hE-g9u">
                                                             <rect key="frame" x="0.0" y="0.0" width="204.33333333333334" height="28"/>
                                                             <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="24"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Portugal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2A-1A-skN">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portugal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2A-1A-skN">
                                                             <rect key="frame" x="0.0" y="28" width="52.666666666666664" height="16.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
                                                             <color key="textColor" name="PlayerAttributeTextColor"/>
@@ -320,17 +320,48 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vJU-lM-z5i"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMR-gt-N9T">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkV-dC-2bL" customClass="AnimationView" customModule="Lottie">
+                                        <rect key="frame" x="20" y="276" width="353" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="32V-dP-atb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loader"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hkV-dC-2bL" secondAttribute="trailing" constant="20" id="O7x-eZ-qNC"/>
+                                    <constraint firstItem="hkV-dC-2bL" firstAttribute="leading" secondItem="wMR-gt-N9T" secondAttribute="leading" constant="20" id="S1y-89-ghn"/>
+                                    <constraint firstItem="hkV-dC-2bL" firstAttribute="centerY" secondItem="wMR-gt-N9T" secondAttribute="centerY" constant="-50" id="uuL-SO-zEl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XRg-Ct-eJw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BEm-gJ-aig"/>
+                            <constraint firstItem="wMR-gt-N9T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kwa-X2-c9G"/>
                             <constraint firstItem="XRg-Ct-eJw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NcT-u8-UWB"/>
+                            <constraint firstItem="wMR-gt-N9T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OSc-db-t4u"/>
+                            <constraint firstAttribute="bottom" secondItem="wMR-gt-N9T" secondAttribute="bottom" id="Vu6-X8-890"/>
+                            <constraint firstItem="wMR-gt-N9T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hxK-x9-PGS"/>
                             <constraint firstItem="XRg-Ct-eJw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="psU-yE-2lc"/>
                             <constraint firstAttribute="bottom" secondItem="XRg-Ct-eJw" secondAttribute="bottom" id="un2-D0-9RE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="hkV-dC-2bL" id="Jlm-ia-new"/>
+                        <outlet property="emptyView" destination="wMR-gt-N9T" id="t8G-fo-5Mq"/>
+                        <outlet property="fixedAge" destination="3ga-pA-VLE" id="x8a-2u-S5b"/>
+                        <outlet property="fixedMarketPrice" destination="QWc-ip-pfN" id="fmI-nC-DFP"/>
+                        <outlet property="fixedNumber" destination="Mzv-1u-Vsc" id="DUF-1w-6Q0"/>
+                        <outlet property="fixedRating" destination="YjN-al-ePD" id="4ZJ-1j-0kZ"/>
                         <outlet property="playerAgeLabel" destination="s2q-xh-dgT" id="jPs-49-hTc"/>
                         <outlet property="playerCharacteristicsCollectionView" destination="QGW-sD-qvt" id="RZb-sH-Bth"/>
                         <outlet property="playerClubImageView" destination="IVs-8h-qkg" id="Dcv-4C-Kzb"/>
@@ -350,6 +381,9 @@
             <point key="canvasLocation" x="20.610687022900763" y="4.9295774647887329"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="hkV-dC-2bL"/>
+    </designables>
     <resources>
         <image name="manUtdLogo" width="2118" height="2159"/>
         <image name="sample" width="670" height="503"/>

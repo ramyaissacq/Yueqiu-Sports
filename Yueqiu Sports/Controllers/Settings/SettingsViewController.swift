@@ -70,10 +70,10 @@ extension SettingsViewController:UITableViewDelegate,UITableViewDataSource{
             openVC(storyBoard: "Main", identifier: "LanguageViewController")
         case 1:
             
-            Utility.openUrl(url: URL(string: "https://8868sportsplayerdataanalysis.wordpress.com/privacy-policy/")!)
+            Utility.openUrl(url: URL(string: "https://yueqiusports.wordpress.com/privacy-policy/")!)
             //ScorePro
         case 2:
-            Utility.shareAction(text: "Install 8868 sports - player data analysis from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
+            Utility.shareAction(text: "Install Yueqiu Sports - Player analysis from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
             
         case 3:
             sendEmail()

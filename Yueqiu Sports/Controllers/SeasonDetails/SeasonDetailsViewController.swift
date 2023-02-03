@@ -91,6 +91,7 @@ class SeasonDetailsViewController: BaseViewController {
 }
 
 extension SeasonDetailsViewController:SeasonDetailsProtocol{
+    
     func didFinishFetch() {
         lblLeague.text = viewModel.seasonDetails?.name
         lblSeason.text = viewModel.seasonDetails?.season
@@ -106,7 +107,6 @@ extension SeasonDetailsViewController:SeasonDetailsProtocol{
             self.emptyView.isHidden = false
             animationView.play()
         }
-        
         
     }
     

@@ -108,9 +108,9 @@ extension UIViewController
         return btn
     }
     
-    func getBackButton()->UIButton{
+    func getBackButton(image:UIImage? = UIImage(named: "back") )->UIButton{
         let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        btn.setImage(UIImage(named: "back"), for: .normal)
+        btn.setImage(image, for: .normal)
         btn.addTarget(self, action: #selector(actionBack), for: .touchUpInside)
         return btn
     }

@@ -96,6 +96,7 @@
             <connections>
                 <outlet property="aboutPlayerLabel" destination="y7H-nN-ncq" id="qfN-1M-b0c"/>
                 <outlet property="cellBackgroundColour" destination="EEJ-TW-8pR" id="xmX-Sg-JQJ"/>
+                <outlet property="fixedAboutPlayer" destination="AB0-zU-P3X" id="CxA-IE-Cyv"/>
                 <outlet property="nestedTableView" destination="fKN-Jh-u1A" id="URm-2I-bKa"/>
             </connections>
             <point key="canvasLocation" x="123.91304347826087" y="226.67410714285714"/>
